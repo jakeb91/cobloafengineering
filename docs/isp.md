@@ -4,7 +4,7 @@ hide:
   - toc
 ---
 
-# I work for an Internet Service Provider
+# Troubleshooting & Escalations
 
 === "Starting Out"
 
@@ -23,6 +23,7 @@ hide:
         id4-- No it's not --> id5
         id5--> id3
     ```
+    `/usr/bin/humour.sh` routine has finished, [proceeding...](#__tabbed_1_2)
 
 === "Stage 1 - Classification"
 
