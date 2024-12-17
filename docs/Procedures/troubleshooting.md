@@ -29,7 +29,7 @@ hide:
 
     !!! warning
 
-        **Never** concede that an issue is due to the network unless advised to do so by engineers _after_ submitting a successful escalation to them, this is an important part of customer expectation management and ensuring that they maintain a cooperative stance with us for long as possible during the troubleshooting process. Once a target for blame has been decided, this can be very difficult to undo and can lead to some very tricky situations if the customer has drawn an incorrect conclusion.
+        **Never** concede that an issue is due to the network unless advised to do so by engineers _after_ submitting a successful escalation to them, this is an important part of customer expectation management and ensuring that they maintain a cooperative exchange with the customer to make resolving the problem as easy as possible. The reason for this stance is that you have not actually performed the troubleshooting work to determine the cause of the fault yet, many customers will (understandably) become less cooperative after an admission of fault. Some faults are fixable even when they are not the fault of the network. So for the benefit of the customer, your sanity and the engineer's sanity, the best option is to never jump to conclusions.
 
     To classify a technical customer issue as a Support agent for an ISP, there are four "classifiers" you need to define:
 
@@ -85,6 +85,10 @@ hide:
 
     ### Compliance
 
+    !!! warning " Obvious Disdain"
+
+        Whilst the various regulations in Australia started with good-intentions the bodies enforcing them have mostly achieved their original goals. Now these bodies merely invent problems to justify their existence and maintain revenue, the main source of which is from issuing fines for non-compliance (spot the massive conflict-of-interest).
+
     Some regulatory schemes burden companies with the cost of easy-to-abuse regulatory mechanisms that some customers will use as a pre-emptively punitive measure against service providers. These schemes are becoming only more punitive over time due to the overall increase in service levels across the industry as a whole, resulting in the schemes implementing increasingly difficult-to-comply-with regulations in order to protect their revenue streams. To this end, it's important to be wary of promising, guaranteeing, suggesting or otherwise making any comment about a product that is not already available in the original sales material presented to the customer when they signed up for the service. It's not uncommon for customers to threaten regulatory mechanisms as a "motivator" to fix an issue even if the issue is unrelated to the service, in such situations caution is advised and should be dealt with by an experienced team leader or manager.
 
     There are two classifications to make here:
@@ -96,14 +100,19 @@ hide:
 
     ### Cost
 
-    There are many costs associated with supporting customers. Of particular note are the indirect costs of notorious customers in terms of effect on team morale for both support and engineering staff. Many notorious customers stand upon a foundation of poor expectation management, which often stem from their interactions with sales and first-contact interactions with support staff. This is further complicated when the notorious customer is influential or noisy, as a public tantrum from them can become very bad PR for your company.
+    There are many costs associated with supporting customers. Of particular note are the indirect costs of notorious customers in terms of effect on team morale for both support and engineering staff. Many notorious customers stand upon a foundation built on poor expectation management and miscommunications, which often stems from their interactions with Sales or other First-Contact interactions such as with Level 1 Support staff. This is further complicated when the notorious customer is influential or noisy, as a public admonition from them can become very bad optics for your company, and possibly even on you personally if they take issue with you professionally.
 
-    **For example:**
-    *Very often if a Level 1 support staff member even off-handedly suggests that there is a network issue (even with evidence to the contrary), it immediately spins a very tangled, expensive and complicated web for numerous higher-level staff to untangle - and often the case is that there are no technical issues within scope to solve. An incorrectly handled issue could be escalated to the point of potentially wasting collective weeks of higher-level staff's labour time for ultimately the same outcome that would have been achieved by initially setting and managing customer expectations correctly at the beginning.*
+    !!! note "Real-life Example"
 
-    *Further down this train of thought, imagine this notorious customer is a Twitch streamer, with 1,000 sweaty fans that watched them disconnect from a grand final match due to their pet cat chewing through the router's power supply cable, only for that streamer to blame "this shitty ISP" to those 1,000 watchers because of previously poorly handled expectations that resulted in negative sentiment. There's 1,000 people your company is now a joke to because they can't see the fried cat laying under the desk on stream.*
+        To give you a real-life example, I once had an issue escalated to me where the end-user insisted there were endless issues with packetloss affecting their Call of Duty gaming experience. My hand was forced into spending nearly 2 weeks full-time investigating this ticket due to an earlier, incorrect admission from a Support agent that there was an issue with the Network causing it. 2 weeks of investigation turned-up inconclusive, however the customer was now being extremely combative. Eventually, video evidence of the issue in action demonstrated that the issue the customer was having was actually a widely reported bug in the game relating to positional audio desyncs. This was a very frustrating experience for all involved, and highlights the very clear need to manage customer expectations and communicate accurate information with them.
+
+        I have unfortunately experienced many situations like this across a number of jobs.
 
     There are four classifications to make here:
+
+    !!! danger "Warning"
+
+        Banter Alert!
 
     - The customer is **high cost, high impact** - they will take a-lot of time to deal with but are vocal brand advocates (hint: Twitch streamers)
     - The customer is **high cost, low impact** - they will take a-lot of time to deal with and are not vocal brand advocates (hint: also Twitch streamers, and most Linus Tech-Tips fans)
@@ -116,7 +125,7 @@ hide:
 
     !!! warning
 
-        **Do not** skip any steps in this process, even if the customer claims to have already completed them. As House M.D. put it so well: **everybody lies**.
+        **Do not** skip any steps in this process, even if the customer claims to have already completed them. As House M.D. put it so well: **everybody lies**. (_Yes that's right customer, we know when you haven't really done that isolation test before we asked you to do it_)
 
     Once an issue has been classified correctly, these classifications provide a guide for following the correct pathway for troubleshooting.
 
@@ -217,7 +226,7 @@ hide:
 
     ### TCP Performance Expectations
 
-    Please refer to the [TCP Performance Expectations snippet](snippets#__tabbed_1_1).
+    Please refer to the [TCP Performance Expectations snippet](../Networking%20Snippets/tcpperformanceexpectations.md).
 
     [Stage 4 - Escalation](#__tabbed_1_4)
 
