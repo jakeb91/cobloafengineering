@@ -19,5 +19,5 @@ For Support engineers and other customer support facing roles, this page exists 
 
 For my industry peers and colleagues this exists for your entertainment and to make fun of all the things I get wrong - because where would the fun be if we were right all the time right?
 
-My name is Jacob Bisby, and I am a Service Provider Network Architect & Engineer* based in Australia.
-*_I also do a-lot of Systems Engineering and VoIP Engineering._
+My name is Jacob Bisby, and I am a Service Provider Network Architect & Engineer^\*^ based in Australia.  
+\*_I also do a-lot of Systems Engineering and VoIP Engineering._
