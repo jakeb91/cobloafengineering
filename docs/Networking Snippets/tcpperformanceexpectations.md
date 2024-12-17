@@ -6,6 +6,12 @@ hide:
 
 # TCP Performance Expectations
 
+!!! note "Update 18/12/2024"
+I should have originally stated this but for clarity: This article is not written about TCP BBR Congestion Control, but more traditional methods of congestion control (CUBIC / RENO / etc)
+If TCP BBR is involved in what you are doing, you are probably not experiencing enough TCP performance weirdness to have been pointed to this article anyway.
+
+Forgive me, internet overlords <3
+
 Think of this as a little "fun-facts" section with random network information that I've found handy to keep on hand.
 
 It's important to consider that packet-loss comes in many forms. One of those forms is transmission reliability, and no transmission medium is capable of 100% successful packet delivery.
@@ -65,8 +71,13 @@ And to aid reading above
 
 #### High Latency TCP Performance on VPNs
 
-Many VPN's implement their own flavours of "TCP Acceleration" mechanisms. There are various proxying techniques available for TCP that can be leveraged on a VPN - some of these techniques are quite hacky but do work to improve performance. To research further, you can research techniques such as _TCP Synproxy_.
+Many (meaning some, but not _all_)VPN's implement their own flavours of "TCP Acceleration" mechanisms. There are various proxying techniques available for TCP that can be leveraged on a VPN - some of these techniques are quite hacky but do work to improve performance. To research further, you can research techniques such as _TCP Synproxy_ for example, although that is not necessarily for improving throughput speeds.
 
-The important thing to note is that these VPN's effectively split one high-latency TCP path into two or more lower-latency TCP paths. The tables above demonstrate that this will have a clearly positive effect on attainable speeds so long as the Loss Rate does not increase significantly. Sometimes these acceleration techniques can result in interesting behaviour, such as certain games showing the latency between the VPN Server and the Game Server, or the VPN Server and the Game Client, rather than the latency between the actual Game Client and the Game Server. This is very easy to spot when the latency is reported at levels low enough to be impossible under the laws of physics that govern the various transmission and signalling mediums involved, many end-users do not seem to understand or grasp this unfortunately.
+The important thing to note is that these VPN's effectively split one high-latency TCP paths into at-least two TCP paths, there's two ways I can think of to do this:
 
-When customers complain that TCP performance improves over VPN services, it is fine to simply tell them that this is expected behaviour.
+- The VPN terminator sits there and maintains the original TCP characteristics like congestion control algorithm, etc, but splits the link into two lower latency paths (which should improve performance). The tables above demonstrate that this will have a clearly positive effect on attainable speeds so long as the Loss Rate does not increase significantly.
+- The VPN terminator sits there and reterminates TCP with BBR Congestion Control, at which point you can throw most of the above information out as that should overcome the issues and massively improve throughput (more so than the above option).
+
+Some VPN services can implement acceleration techniques that result in interesting behaviour, such as certain games showing the latency between the VPN Server and the Game Server, or the VPN Server and the Game Client, rather than the latency between the actual Game Client and the Game Server. This is very easy to spot when the latency is reported at levels low enough to be impossible under the laws of physics that govern the various transmission and signalling mediums involved, many end-users do not seem to understand or grasp this unfortunately. Reputable VPN services will not do this (faking a low ping), so keep an eye out for these things.
+
+When customers complain that TCP performance improves over VPN services, it is fine to simply tell them that this is expected behaviour. I wholeheartedly agree that there a number of good VPN services out there that help overcome the limitations of TCP Perfomance over High Latency paths.
