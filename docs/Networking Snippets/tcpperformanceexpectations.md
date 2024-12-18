@@ -7,10 +7,11 @@ hide:
 # TCP Performance Expectations
 
 !!! note "Update 18/12/2024"
-I should have originally stated this but for clarity: This article is not written about TCP BBR Congestion Control, but more traditional methods of congestion control (CUBIC / RENO / etc)
-If TCP BBR is involved in what you are doing, you are probably not experiencing enough TCP performance weirdness to have been pointed to this article anyway.
 
-Forgive me, internet overlords <3
+    I should have originally stated this but for clarity: This article is not written about TCP BBR Congestion Control, but more traditional methods of congestion control (CUBIC / RENO / etc)
+    If TCP BBR is involved in what you are doing, you are probably not experiencing enough TCP performance weirdness to have been pointed to this article anyway.
+
+    Forgive me, internet overlords <3
 
 Think of this as a little "fun-facts" section with random network information that I've found handy to keep on hand.
 
