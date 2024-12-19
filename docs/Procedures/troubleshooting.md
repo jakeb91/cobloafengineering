@@ -110,14 +110,12 @@ hide:
 
     There are four classifications to make here:
 
-    !!! danger "Warning"
+    !!! danger "Banter Alert!"
 
-        Banter Alert!
-
-    - The customer is **high cost, high impact** - they will take a-lot of time to deal with but are vocal brand advocates (hint: Twitch streamers)
-    - The customer is **high cost, low impact** - they will take a-lot of time to deal with and are not vocal brand advocates (hint: also Twitch streamers, and most Linus Tech-Tips fans)
-    - The customer is **low cost, high impact** - they are not too demanding and are vocal brand advocates (hint: the best and rarest type of customer)
-    - The customer is **low cost, low impact** - They are not too demanding and are not vocal brand advoctates (hint: the most common type of customer)
+        - The customer is **high cost, high impact** - they will take a-lot of time to deal with but are vocal brand advocates (hint: Twitch streamers)
+        - The customer is **high cost, low impact** - they will take a-lot of time to deal with and are not vocal brand advocates (hint: also Twitch streamers, and most Linus Tech-Tips fans)
+        - The customer is **low cost, high impact** - they are not too demanding and are vocal brand advocates (hint: the best and rarest type of customer)
+        - The customer is **low cost, low impact** - they are not too demanding and are not vocal brand advocates (hint: the most common type of customer)
 
     [Stage 2 - Troubleshooting](#__tabbed_1_3)
 
