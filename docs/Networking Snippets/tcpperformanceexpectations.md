@@ -1,4 +1,5 @@
 ---
+comments: true
 hide:
   - navigation
   - toc
@@ -72,7 +73,7 @@ And to aid reading above
 
 #### High Latency TCP Performance on VPNs
 
-Many (meaning some, but not _all_)VPN's implement their own flavours of "TCP Acceleration" mechanisms. There are various proxying techniques available for TCP that can be leveraged on a VPN - some of these techniques are quite hacky but do work to improve performance. To research further, you can research techniques such as _TCP Synproxy_ for example, although that is not necessarily for improving throughput speeds.
+Many (meaning some, but not _all_) VPNs implement their own flavours of "TCP Acceleration" mechanisms. There are various proxying techniques available for TCP that can be leveraged on a VPN, some of these techniques can seem quite hacky but do work to improve performance. And hey - TCP is older than most of the people reading this article, it's a given that we would have to start hacking at it to make it keep up with technology around it. To research further, you can research techniques such as _TCP Synproxy_ for example, although that is not necessarily for improving throughput speeds.
 
 The important thing to note is that these VPN's effectively split one high-latency TCP paths into at-least two TCP paths, there's two ways I can think of to do this:
 
