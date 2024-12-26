@@ -6,7 +6,7 @@ extra:
     - icon: fontawesome/solid/paper-plane
       link: mailto:jacob@enterconnect.com.au
     - icon: fontawesome/solid/suitcase
-      link: https://enterconnect.solutions
+      link: https://cobloaf.engineering
 markdown_extensions:
   - admonition
   - attr_list
@@ -35,8 +35,19 @@ markdown_extensions:
   - pymdownx.tilde
   - tables
 plugins: 
+  - asciinema-player
+  - blog:
+      categories: true
+      post_readtime: false
   - mermaid2
-site_description: "Just a very opinionated Network Engineer that hopes you want to get better at your job."
+  - rss:
+      match_path: blog/posts/.* 
+      date_from_meta:
+        as_creation: date
+      categories:
+        - categories
+        - tags 
+site_description: "Just an opinionated Network Engineer that hopes you want to get better at your job or learn new things."
 site_name: "Cobloaf Engineering"
 site_url: https://cobloaf.engineering
 theme:
@@ -54,6 +65,7 @@ theme:
     - search.share
     - search.suggest
     - toc.integrate
+  logo: assets/logo.png
   name: material
   palette:
     - scheme: default

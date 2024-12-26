@@ -1,11 +1,19 @@
 ---
 comments: true
-hide:
-  - navigation
-  - toc
+date: 2024-12-17
+authors:
+  - cobloaf
+categories:
+  - Snippet
+  - Troubleshooting
+  - TCP
 ---
 
 # TCP Performance Expectations
+
+In this article we'll cover a bit about what kind of performance you can expect from more traditional TCP Congestion Control methods, and among other things why it's becoming increasingly common to hear phrases such as "but it works better over my VPN".
+
+<!-- more -->
 
 !!! note "Update 18/12/2024"
 
@@ -14,7 +22,7 @@ hide:
 
     Forgive me, internet overlords <3
 
-Think of this as a little "fun-facts" section with random network information that I've found handy to keep on hand.
+# Packet Loss
 
 It's important to consider that packet-loss comes in many forms. One of those forms is transmission reliability, and no transmission medium is capable of 100% successful packet delivery.
 
@@ -71,7 +79,7 @@ And to aid reading above
 
 ---
 
-#### High Latency TCP Performance on VPNs
+# High Latency TCP Performance on VPNs
 
 Many (meaning some, but not _all_) VPNs implement their own flavours of "TCP Acceleration" mechanisms. There are various proxying techniques available for TCP that can be leveraged on a VPN, some of these techniques can seem quite hacky but do work to improve performance. And hey - TCP is older than most of the people reading this article, it's a given that we would have to start hacking at it to make it keep up with technology around it. To research further, you can research techniques such as _TCP Synproxy_ for example, although that is not necessarily for improving throughput speeds.
 
